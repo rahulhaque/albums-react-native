@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
+import {LinearGradient} from 'expo';
 
 const Header = (props) => {
     return (
-        <View style={styles.viewStyle}>
-            <Text style={styles.textStyle}>{props.headerText}</Text>
-        </View>
+        <LinearGradient colors={['#0cb6ba', '#f7921d']} start={[0, 0]} end={[1, 0]} style={styles.viewStyle}>
+                <Text style={styles.textStyle}>{props.headerText}</Text>
+                <Text>Your Music Buddy.</Text>
+        </LinearGradient>
     );
 };
 
@@ -14,16 +16,18 @@ const styles = {
         backgroundColor: '#f8f8f8',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 60,
+        height: 80,
         paddingTop: 20,
         shadowColor: '#000',
-        shadowOffset: {width: 0, height: 2},
-        shadowOpacity: 0.2,
-        elevation: 5,
+        shadowOffset: {width: 0, height: 3},
+        shadowOpacity: 0.8,
+        elevation: 10,
         position: 'relative'
     },
     textStyle: {
-        fontSize: 24
+        fontSize: 24,
+        color: '#633991',
+        fontWeight: '600',
     }
 };
 

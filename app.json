@@ -1,5 +1,17 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0"
+    "sdkVersion": "25.0.0",
+    "name": "Bum Bums!",
+    "icon": "./src/icon/icon.png",
+    "version": "1.0.0",
+    "slug": "bum-bums",
+    "privacy": "public",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "org.rahulhaque.albums"
+    },
+    "android": {
+      "package": "org.rahulhaque.albums"
+    }
   }
 }
